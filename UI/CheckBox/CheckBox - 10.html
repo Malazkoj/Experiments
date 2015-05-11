@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>CheckBox 08</title>
+        <style>
+            html {
+                margin:0;
+                padding:0;
+            }
+            body {
+                background-color: #414141;
+                padding-top: 50px;
+            }
+            .checkBox {
+                margin: auto;
+                position: relative;
+                display: block;
+                width: 75px;
+                height: 25px;
+            }
+            input[type=checkbox]{
+                cursor:pointer;
+               -webkit-appearance: none;
+                outline: none;
+            }
+             input[type=checkbox]:after, input[type=checkbox]:before{
+             border-radius: 50px; 
+             position:absolute;
+             top: 0;
+             left:0;
+              display: inline-block;
+              transition: all 0.2s ease-in-out;
+                border: 1px solid #a4a4a4;
+             }
+                input[type=checkbox]:before {
+                    content: '';
+                    width: 50px;
+                    height: 15px;
+                    background: #111113;
+                    border-color: transparent;
+                    box-shadow: 1px -1px 1px rgba(255,255,255,0.1) inset;
+                }
+                input[type=checkbox]:after {
+                    content: '';
+                    top: -4px;
+                    width: 10px;
+                    height: 10px;
+                    background: #fff;
+                    background: -webkit-linear-gradient(#101012,#333238);
+                    border-radius: 50px;
+                    border: 6px solid #2d2c34;
+                    box-shadow: 1px 0px 1px #45444a, 1px 1px 4px,-1px -1px 1px rgba(255,255,255,0.1)inset;
+                     left: -2px;
+                }
+
+                input[type=checkbox]:checked:after {
+                    background: -webkit-linear-gradient(#e02c59,#aa11a9);
+                    box-shadow: 1px 0px 0px #45444a, 1px 1px 4px,0px 0px 4px #FF00AE inset,0px 0px 1px #FF00ee inset;
+                     transform: translateX(32px);
+                }
+             input[type=checkbox]:checked:before{
+               /*background: -webkit-linear-gradient(#2c89e0,#287dcc);*/  
+             }
+        </style>
+    </head>
+    
+    <body>
+
+            <label class="checkBox">
+                <input type="checkbox" />
+            </label>
+
+    </body>
+
+</html>
