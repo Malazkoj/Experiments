@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>CheckBox 06</title>
+        <style>
+            html {
+                margin:0;
+                padding:0;
+            }
+            body {
+                background-color: #7F8C8D;
+                 padding-top: 50px;
+            }
+            
+     
+            .checkBox {
+                margin: auto;
+                position: relative;
+                display: block;
+                width: 75px;
+                height: 25px;
+               
+               
+                
+            }
+            input[type=checkbox]{
+                cursor:pointer;
+               -webkit-appearance: none;
+                outline: none;
+                
+            }
+             input[type=checkbox]:after, input[type=checkbox]:before{
+             border-radius: 50px; 
+             position:absolute;
+             top: 0;
+             left:0;
+              display: inline-block;
+              
+              border:2px solid #fff;
+             }
+                input[type=checkbox]:before {
+                    content: 'OFF';
+                    width: 75px;
+                    height: 25px;
+                    background: #34495E;
+                    color: #fff;
+                    text-align: center;
+                    font-weight: bold;
+                    text-indent: 11px;
+                    line-height: 26px;
+                    font-size: 11pt;
+                }
+                input[type=checkbox]:after {
+                    content: '';
+                    top: 4px;
+                    width: 19px;
+                    height: 19px;
+                    background: #fff;
+                    border: 1px solid #fff;
+                    left: 4px;
+                    transition: all 0.2s ease-in-out;
+                }
+            
+             input[type=checkbox]:checked:after{
+              
+                transform: translateX(50px);
+                
+             }
+                input[type=checkbox]:checked:before {
+                    background: #27AE60;
+                    content: 'ON';
+                    text-indent:-10px;
+                }
+        </style>
+    </head>
+    
+    <body>
+
+            <label class="checkBox">
+                <input type="checkbox" />
+            </label>
+
+    </body>
+
+</html>
