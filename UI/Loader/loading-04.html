@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .overlay {
+            background-color: #e4573e;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .holder {
+            display: inline-block;
+            position: relative;
+            top: 50%;
+        }
+
+        .content {
+            display: inline-block;
+            position: relative;
+            margin: auto;
+            padding: 0;
+            background-color: rgba(0,0,0,1);
+            width: 15px;
+            height: 15px;
+                  transition: all ease 2s;
+            -webkit-transition: all ease 2s;
+            background-color: #fff;
+            border-radius: 50%;
+            animation: a1 2s ease-in-out infinite;
+            -webkit-animation: a1 2s ease-in-out infinite;
+                 }
+            .content:first-child {
+                float: right;
+                right: 15px;
+                -webkit-animation-delay: .5s;
+                
+            }
+
+        .s {
+            -webkit-animation: a1 2s ease-in-out infinite;
+        }
+        .a4 {
+            
+        }
+
+        @-webkit-keyframes a1 {
+            0% {
+                opacity: 1;
+                transform: scale(.5);
+            }
+
+            25% {
+                transform: scale(3);
+            }
+            50% {
+                
+               
+            }
+
+            75% {
+                opacity: 0;
+            }   
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @-webkit-keyframes a2 {
+            0% {
+                opacity: .2;
+                transform: scale(3);
+            }
+
+            25% {
+               
+            }
+
+            50% {
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="overlay">
+
+        <div class="holder">
+
+            <div class="content">
+
+            </div>
+
+            <div class="content s">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
